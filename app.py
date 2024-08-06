@@ -5,7 +5,7 @@ from ultralytics import YOLO
 app = Flask(__name__)
 
 # Load YOLOv8 model
-model = YOLO('models\yolov8\YOLOv8_Small_RDD.pt')
+model = YOLO(r'models\yolov8\YOLOv8_Small_RDD.pt')
 
 def detect_road_damage(frame):
     results = model(frame)
